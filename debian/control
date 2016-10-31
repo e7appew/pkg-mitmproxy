@@ -44,7 +44,9 @@ Homepage: https://mitmproxy.org
 
 Package: mitmproxy
 Architecture: all
+Pre-Depends: dpkg (>= 1.17.14)
 Depends: ${misc:Depends}, ${python:Depends},
+	 fonts-font-awesome (>= 4.2.0~dfsg),
 	 python-openssl (>= 16.0), python-openssl (<< 17.0),
 	 python-hpack,
 	 python-backports.ssl-match-hostname,

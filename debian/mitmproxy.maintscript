@@ -1,0 +1,2 @@
+dir_to_symlink /usr/lib/python2.7/dist-packages/mitmproxy/onboarding/static/fontawesome ../../../../../../share/fonts-font-awesome 0.18.2+dfsg-1~
+dir_to_symlink /usr/lib/python2.7/dist-packages/mitmproxy/web/static/fonts ../../../../../../share/fonts-font-awesome/fonts 0.18.2+dfsg-1~
