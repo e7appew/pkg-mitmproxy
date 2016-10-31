@@ -2,6 +2,12 @@ Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: mitmproxy
 Upstream-Contact: Aldo Cortesi <aldo@corte.si>
 Source: https://github.com/mitmproxy/mitmproxy
+ The pristine upstream tarballs contain fonts and other files which have
+ been excluded from the Debian upstream tarballs.
+Files-Excluded: .gitattributes
+ mitmproxy/onboarding/static/fontawesome
+ mitmproxy/web/static/fonts
+ web/src/fonts
 
 Files: *
 Copyright: 2013–2016, Aldo Cortesi <aldo@corte.si>

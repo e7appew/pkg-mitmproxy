@@ -1,2 +1,9 @@
-version=3
-https://github.com/mitmproxy/mitmproxy/tags .*/v(\d[\d\.]*)\.tar\.gz debian uupdate
+version=4
+
+opts="dversionmangle=s/\+dfsg\d*$//, \
+      filenamemangle=s%(?:.*?)?v?(\d[\d.]*)\.tar\.gz%mitmproxy-$1.tar.gz%, \
+      compression=xz, \
+      repack, \
+      repacksuffix=+dfsg" \
+    https://github.com/mitmproxy/mitmproxy/releases \
+    (?:.*?/)?v?(\d[\d.]*)\.tar\.gz debian uupdate
