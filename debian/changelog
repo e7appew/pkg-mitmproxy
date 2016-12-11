@@ -1,3 +1,31 @@
+mitmproxy (0.18.2+dfsg-1.0) UNRELEASED; urgency=medium
+
+  * Non-maintainer upload.
+  * Update copyright file to machine-readable format.  The upstream license
+    was switched from GPL-3 to MIT in 2013, so the copyright file has been
+    changed accordingly. The new format will also facilitate excluding
+    files from our upstream tarballs.
+  * Show how we derive our upstream tarballs via watch and copyright files.
+  * Update Standards-Version to 3.9.8.
+  * Clean up mitmproxy.egg-info.
+  * Sync with repacked DFSG upstream tarball:
+    mitmproxy_0.18.2+dfsg.orig.tar.xz
+  * Use packaged version of Font Awesome in place of those excluded
+    from upstream.
+  * Prevent chrome-devtools LICENSE from being installed in undesired
+    location.
+  * Add more licensing details to copyright file.
+  * Install examples via dh_installexamples instead of dh_installdocs.
+  * Updated mitmproxy man page. Converted man page into markdown for
+    ease of maitenance and synced with 'mitmproxy --help'. Unfortunately,
+    the process of keeping future changes in documentation in sync is
+    still not automated. (Closes: #806635, #812388)
+  * Created man pages for remaining binaries.
+  * Update Vcs-Git and Vcs-Browser to use secure protocols.
+  * Override source-is-missing Lintian errors.
+
+ -- Carlos Maddela <e7appew@gmail.com>  Mon, 12 Dec 2016 00:03:26 +1100
+
 mitmproxy (0.18.2-4) unstable; urgency=medium
 
   * Relax python-passlib versioned dependencies, as the entire test suite
